@@ -24,6 +24,8 @@
     letter-spacing: 0.04rem;
     line-height: 140%;
     padding: 0; margin: 0;
+    /* prevent iOS font size change */
+    -webkit-text-size-adjust: 100%;
 }
 
 pre.code, code {
