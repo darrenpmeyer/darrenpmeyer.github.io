@@ -1,0 +1,80 @@
+/*  Darren P Meyer GitHub Pages Stylesheet © 2024 by Darren P Meyer is licensed under 
+    Attribution-ShareAlike 4.0 International. 
+    To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Sixtyfour&family=Titillium+Web&display=swap');
+
+
+:root {
+    --color-bg: #212121;
+    --color-text: #fff8e8;
+    --color-highlight-2: #e28413;
+    --color-highlight-2-dim: #c26400;
+    --color-highlight-1: #01baef;
+    --color-highlight-1-dim: #009abf;
+    --color-soft-1: #9b5094;
+    --padding-paragraph: 0.6em;
+}
+
+*, *::before, *::after, html {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 0.04rem;
+    line-height: 140%;
+    padding: 0; margin: 0;
+}
+
+pre.code, code {
+    font-family: 'Inconsolata', monospace !important;
+    background-color: var(--color-bg) !important;
+}
+
+pre {
+    border-left: 0.1cm solid var(--color-highlight-2);
+    border-top: 1px dotted var(--color-highlight-2);
+    border-bottom: 1px dotted var(--color-highlight-2);
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--color-highlight-2);
+    font-family: 'Sixtyfour', monospace;
+    font-weight: normal;
+    padding-bottom: 0.2em;
+}
+
+p {
+    padding-bottom: var(--padding-paragraph);
+}
+
+a {
+    color: var(--color-highlight-1);
+    text-decoration-style: solid;
+}
+
+a:visited, a:active {
+    color: var(--color-highlight-1-dim);
+}
+
+img.round-profile {
+    border-radius: 50%;
+    width: 3cm;
+    vertical-align: middle;
+}
+
+.ipsum {
+    font-style: italic;
+}
+
+div#heading div {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.2cm;
+}
+
+div#main-body {
+    /* column-count: 2; */
+    margin: 0.5cm;
+    max-width: 210mm;
+}
